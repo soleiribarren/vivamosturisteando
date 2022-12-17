@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="fotografia, drone, calendario, experiencia, vacaciones, viajes, agenda">
+    <meta name="description" content="Conoce nuestros productos y servicios">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo.css"/>
+    <title>Productos y Servicios de Vivamos Turisteando</title>
+</head>
+
+<body>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-md bg-color navbar-dark">
+    
+            <div class="col-sm-10 col-md-6 col-lg-4 justify-content-start logoA"><span><i class="fa-brands fa-java logoTaza"></i><a href="../index.html"></span>Vivamos Turisteando</a></div>
+    
+                <button class="col-sm-2 col-md-6 col-lg-8 justify-content-end navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span></button>
+    
+                <div class="collapse navbar-collapse justify-content-end navegacionDelSitio" id="collapsibleNavbar">
+                    <ul class="navbar-nav nav paginas"> 
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productosServicios.html">Productos y Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+        </nav>
+        
+    </header>
+
+
+    <input id = "input">
+    <button id = "boton">Buscar</button>
+
+    <div id = "contenedorProductos"></div>
+    
+    <div id = "carrito"></div>
+    <button id="comprar">Comprar</button>
+    
+    <!-- <main class="mainMenu">
+
+        <div class="headerBanner">
+            <img src="../img/cafecafe.jpg" alt="Portada Hostel">
+        </div>
+            
+        <h1>Brunch</h1>
+
+        <div class="mainMenu__brunch">
+
+            <div class="mainMenu__precio">
+                <h2>Verano</h2>
+                <img src="../img/brunchbb.jpg" alt="Brunch Verano">
+            
+                <div class="carta">
+                <p>3 Medialunas, 2 Alemanas con Nuez, 5 Chipa, 2 Croissant de Jamón y Queso, 2 Croissant au fromage con Mozzarella y Prosciutto, 2 Mini Bavaria de Salmón y 2 Mini Bayolette de Jamón crudo y Queso.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Otoño</h2>
+                <img src="../img/brunch1.jpg" alt="Brunch Otoño">
+            
+                <div class="carta">
+                <p>2 Medialunas, 1 Pain au Chocolat , 1 Croissant d´Amond, 4 Macarons, 1 Brioche, 1 Croissant au fromage con Mozzarella y Prosciutto y 2 Mermeladas (28gr).
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Invierno</h2>
+                <img src="../img/brunch2.jpg" alt="Brunch Invierno">
+            
+                <div class="carta">
+                <p>Almuerzo para mínimo 2 personas con Variedad de finger sandwich, Sandwich de Prosciutto y Fontina en Pan Rústico crujiente, Sandwiches de Pastrami y Pepinillos con salsa de mostazas, Focaccias, y Croissant au fromage con prosciutto y Fiordilatte.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Primavera</h2>
+                <img src="../img/brunch3.jpg" alt="Brunch Primavera">
+            
+                <div class="carta">
+                <p>Una experiencia Europea, con baguette Francesa, brie Frances, jamon crudo, pan de espinaca y vegetales asados para un sandwich vegetariano, tostadas de queso y típica viennoiserie Francesa.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+            
+        </div>
+
+        <h1>Teanner</h1>
+
+        <div class="mainMenu__brunch">
+
+            <div class="mainMenu__precio">
+                <h2>Verano</h2>
+                <img src="../img/teanner1.jpg" alt="Teanner Verano">
+            
+                <div class="carta">
+                <p>3 Medialunas, 2 Alemanas con Nuez, 5 Chipa, 2 Croissant de Jamón y Queso, 2 Croissant au fromage con Mozzarella y Prosciutto, 2 Mini Bavaria de Salmón y 2 Mini Bayolette de Jamón crudo y Queso.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Otoño</h2>
+                <img src="../img/teanner2.jpg" alt="Teanner Otoño">
+            
+                <div class="carta">
+                <p>2 Medialunas, 1 Pain au Chocolat , 1 Croissant d´Amond, 4 Macarons, 1 Brioche, 1 Croissant au fromage con Mozzarella y Prosciutto y 2 Mermeladas (28gr).
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Invierno</h2>
+                <img src="../img/teanner3.jpg" alt="Teanner Invierno">
+            
+                <div class="carta">
+                <p>Almuerzo para mínimo 2 personas con Variedad de finger sandwich, Sandwich de Prosciutto y Fontina en Pan Rústico crujiente, Sandwiches de Pastrami y Pepinillos con salsa de mostazas, Focaccias, y Croissant au fromage con prosciutto y Fiordilatte.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+
+            <div class="mainMenu__precio">
+                <h2>Primavera</h2>
+                <img src="../img/teanner4.jpg" alt="Teanner Primavera">
+            
+                <div class="carta">
+                <p>Una experiencia Europea, con baguette Francesa, brie Frances, jamon crudo, pan de espinaca y vegetales asados para un sandwich vegetariano, tostadas de queso y típica viennoiserie Francesa.
+                <br />
+                $450
+                </p>
+                </div>    
+            </div>
+            
+        </div>
+
+    </main> -->
+
+    <footer>
+        <p>SEGUINOS EN NUESTRAS REDES SOCIALES</p>
+        
+        <div class=" container-fluid redes">
+            <div class="row justify-content-center">
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contacto.html"><i class="fa-solid fa-at"></i></a>
+            </div>
+        </div>
+        
+        <div class="logoAPie">Vivamos Turisteando
+            <span><i class="fa-brands fa-java"></i></span>
+            <span class="logoBPie">#vivamosturisteando</span>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="../js/masterclass.js"></script>
+</body>
+</html>

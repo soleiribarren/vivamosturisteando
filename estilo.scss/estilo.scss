@@ -1,0 +1,655 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color_principal: rgb(21, 21, 98);
+$color_secundario: rgb(238, 195, 195);
+
+$font_principal: Comfortaa;
+$font_secundaria: Square Peg;
+
+$border: 2px solid rgb(21, 21, 98);
+
+/* INICIO DE CARACTERISTICAS GENERICAS */
+
+header {
+    min-height: 50px;
+    width: 100%;
+    background-color: $color_principal;
+    color: $color_secundario;
+    }
+
+    nav .logoA {
+        font-size: 55px;
+        font-family: $font_principal;
+        color: $color_secundario;
+        }
+
+    nav .logoA a:hover {
+        font-size: 50px;
+        text-decoration: none;
+        color: $color_secundario;
+    }
+
+    a {
+        color: $color_secundario;
+    }
+
+    .logoTaza {
+        color: $color_secundario;
+    }
+
+    .paginas {
+        font-size: 30px;
+        font-family: $font_secundaria;
+        margin-top: 75px;
+    }
+
+    .logoA{
+        animation-name: logoAnimation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes logoAnimation {
+    
+        0% {
+        opacity: 0.25;
+        transform: translateX(-25px);
+        }
+
+        20%,80% {
+        opacity: 0.75;
+        transform: translateX(0);
+        }
+    
+        100% {
+        opacity: 1;
+        transform: translateX(25px);}
+    }
+    
+
+/*FINALIZACION DE DESCRIPCION GENERICA*/
+
+
+/* INICIO */
+
+    .headerBanner{
+        width: 100%;
+        height: 380px;
+    }
+    
+        .headerBanner img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-family: $font_principal;
+    }
+    
+        .mainText{
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .mainText h2{
+            text-align: center;
+            margin: 0 0 10px;
+            font-family: $font_principal;
+            color: $color_secundario;
+            font-size: 40px;
+            background-color: $color_principal;   
+        }
+
+        .mainText p{
+            margin: 10px;
+            font-size: 20px;
+        }
+    
+    .mainImg{
+        width: 90vw;
+        margin: auto;
+    }
+    
+        .mainImg img{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+/* NOSOTROS */
+
+.mainNosotros{
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.mainNosotros__container{
+    border: solid 1px rgb(235, 235, 235);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.mainNosotros__img{
+    width: 100%;
+}
+
+    .mainNosotros__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+.mainNosotros__cotillon{
+    width: 100%;
+}
+
+    .mainNosotros__cotillon img{
+        width: 100%;
+        border-radius: 5px;
+    }
+
+.mainNosotros__cotillon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    }
+
+    .mainNosotros__cotillon img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.mainNosotros__text{
+    width: 100%;
+}
+
+    .mainNosotros__text h3{
+        text-align: center;
+        font-family: $font_secundaria;
+        font-size: 45px;
+        background-color: $color_secundario;
+        color: $color_principal;
+        margin-top: 10px;
+    }
+
+    .mainNosotros__text p{
+        text-align: center;
+        font-family: $font_principal;
+        font-size: 15px;
+    }
+
+/*FINALIZACION DE PAGINA NOSOTROS/
+
+/* HABITACIONES */
+
+.mainHostel{
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.headerBanner__hostel{
+    width: 100%;
+    height: 280px;
+}
+
+    .headerBanner__hostel img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.mainHostel h1{
+    background-color: $color_secundario;
+    color: $color_principal;
+    width: 100%;
+    height: auto;
+    font-family: $font_principal;
+    font-size: 45px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+}
+
+.mainHostel__habitaciones{
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding: 10px;
+    gap: 10px;
+    }
+
+    .habitaciones{
+        width: 320px;
+    }
+
+    .habitaciones img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .habitaciones h2{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(238, 195, 195, 0.438);
+        color: $color_principal;
+        font-size: 45px;
+        cursor: pointer;
+        font-family: $font_secundaria;
+    }
+
+    .descripcion__habitaciones {
+        background-color: rgba(253, 249, 243, 0.808);
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        transform: translate(0%, -100%);
+        transition: 0.5s ease;
+        position: relative;
+    }
+
+    .descripcion__habitaciones p{
+        text-align: center;
+        font-family: $font_principal;
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .habitaciones:hover .descripcion__habitaciones {
+        opacity: 1;
+    }
+
+/*FINALIZACION DE PAGINA HABITACIONES*/
+
+
+/* GASTRONOMIA */
+    
+.mainMenu{
+    padding: 10px;
+    margin: 20px 0;
+}
+
+    .mainMenu h1{
+        background-color: $color_secundario;
+        color: $color_principal;
+        width: 100%;
+        height: auto;
+        font-family: $font_principal;
+        font-size: 50px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+
+.mainMenu__brunch{
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding: 10px;
+    gap: 10px;
+    }
+
+    .mainMenu__precio{
+        width: 320px; 
+    }
+
+    .mainMenu__precio img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .mainMenu__precio h2{
+        position: absolute;
+        background-color: rgba(238, 195, 195, 0.438);
+        color: $color_principal;
+        font-size: 50px;
+        font-family: $font_principal;
+        cursor: pointer;
+    }
+
+    .carta {
+        background-color: rgba(253, 249, 243, 0.808);
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        transform: translate(0%, -100%);
+        transition: 0.5s ease;
+        position: relative;
+    }
+
+    .carta p{
+        text-align: center;
+        font-family: $font_principal;
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .mainMenu__precio:hover .carta{
+        opacity: 1;
+    }
+
+/* FINALIZACION DE PAGINA HABITACIONES */
+
+/*CONTACTO*/
+
+.paginaContacto{
+    width: 100%;
+    }
+
+    .contactoSolicitud{
+        color: $color_principal;
+        font-family: $font_principal;
+        background-color: $color_secundario;
+        font-size: 20px;
+        border: 4px solid $color_principal;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        }
+
+    #nombre, #apellido, #edad, #email, #comentarios{
+    font-size: 18px;
+    }
+
+/* FINALIZACION DE PAGINA CONTACTO */
+
+/* PIE DE PAGINA */
+
+    footer{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        font-family: $font_principal;
+        padding: 5px;
+        background-color: $color_principal;
+        }
+    
+        .redes a{
+            font-size: 30px;
+            letter-spacing: 20px;
+            color:$color_secundario;
+            text-decoration: none;
+        }
+    
+        footer p{
+            color: $color_secundario;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+    
+        .logoAPie{
+            color: $color_secundario;
+            font-size: 25px;
+            font-family: $font_principal;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    
+        .logoBPie{
+            color: $color_secundario;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-family: $font_secundaria;
+            text-align: center;
+        }
+
+    /*  FIN DE PIE DE PAGINA */ 
+
+    @media (min-width : 480px) {
+    
+        .mainImg{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    
+        .mainImg img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mainText h2{
+            font-size: 43px; 
+        }
+        .mainText p{
+            padding: 10px;
+            font-size: 22px;
+        }
+    
+        .mainMenu__brunch{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+        .mainMenu__precio{
+            width: 100%;
+        }
+
+        .mainMenu__precio h2{
+            font-size: 30px;
+            padding-left: 50px;
+        }
+
+        .mainHostel__habitaciones{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+        .habitaciones{
+            width: 220px;
+        }
+
+    }
+
+    @media (min-width: 600px) {
+
+        .mainMenu__precio {
+            width: 100%;
+        }
+
+        .habitaciones {
+            width: 270px;
+        }
+
+        .contactoSolicitud{
+            min-width: 400px;
+            margin-left: 105px;
+        }
+        
+
+    }
+    
+    @media (min-width: 768px) {
+    
+        .mainMenu__precio {
+            width: 100%;
+        }
+
+        .habitaciones {
+            width: 350px;
+        }
+
+        .paginaContacto {
+            width: 300px;
+            margin-left: 80px;
+        }
+
+    }
+
+    @media (min-width : 992px) {
+    
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    
+        .mainImg{
+            padding: 50px 0px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .mainText h2{
+            font-size: 41px; 
+        }
+
+        .mainText p{
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .mainNosotros__img {
+            grid-area: mainNosotros__img;
+        }
+    
+        .mainNosotros__text {
+            grid-area: mainNosotros__text;
+        }
+    
+        .mainNosotros__cotillon {
+            grid-area: mainNosotros__cotillon;
+        }
+    
+        .mainNosotros__container{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+                "mainNosotros__img mainNosotros__text"
+                "mainNosotros__img mainNosotros__cotillon"
+            ;
+            gap: 30px;
+        }
+    
+        .mainNosotros__img{
+            width: 100%;
+    
+        }
+    
+        .mainNosotros__cotillon{
+            column-gap: 15px;
+        }
+    
+    
+        .mainNosotros{
+            padding: 30px;
+        }   
+    
+        .mainMenu__precio {
+            width: 100%;
+        }
+
+        .mainMenu__brunch{
+            width: 100%;
+        }
+
+        .habitaciones {
+            width: 460px;
+        }
+
+        .mainHostel__habitaciones{
+            width: 100%;
+        }
+
+        .paginaContacto{
+            width: 500px;
+            margin-left: 200px;
+            }
+
+    }
+
+    @media (min-width : 1200px) {
+    
+        .main{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .mainImg{
+            grid-template-columns: repeat(4, 1fr);
+            width: 90%;
+            padding: 0;
+            gap: 20px;
+        }
+        
+        .mainText h2{
+            font-size: 55px;
+        }
+
+        .mainText p{
+            margin: 20px 0;
+            font-size: 25px;
+        }
+
+        .mainNosotros__container{
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+    
+        .mainNosotros__container:hover {
+            box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.31);
+            transition: all .8s;
+        }
+        
+        .mainMenu__brunch{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+        }
+
+        .mainMenu__precio {
+            width: 100%;
+            height: 450px;
+        }
+
+        .mainMenu__brunch{
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .mainHostel__habitaciones{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+        }
+
+        .habitaciones {
+            width: 260px;
+            height: 450px;
+        }
+
+        .mainHostel__habitaciones{
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .contactoSolicitud{
+            min-height: 650px;
+            width: 1000px;
+            margin-top: 70px;
+            margin-bottom: 55px;
+            margin-left: 210px;
+            }
+    }
+
+
